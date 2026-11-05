@@ -1,0 +1,4 @@
+Model,Parameter,Waktu Training (detik),Test Loss,Test Accuracy,Macro Precision,Macro Recall,Macro F1
+MLP,6429452,579.7,1.3597,0.557,0.4905,0.5061,0.4769
+CNN Scratch,458732,1634.0,0.7528,0.7548,0.7264,0.7262,0.721
+MobileNetV2 (TL),2273356,774.2,0.1359,0.96,0.9473,0.9462,0.9466
