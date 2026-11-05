@@ -52,7 +52,9 @@ def load_assets():
     class_names = json.load(open(_find("class_names.json")))
     cfg = _find("config.json", required=False)
     threshold = json.load(open(cfg)).get("threshold", 0.7) if cfg else 0.7
-    base = next((l for l in model.layers if isinstance(l, tf.keras.Model)), None)
+    # backbone = sub-model non-Sequential (lapisan augmentasi juga bertipe Model, jadi harus dikecualikan)
+    base = next((l for l in model.layers
+                 if isinstance(l, tf.keras.Model) and not isinstance(l, tf.keras.Sequential)), None)
     gap = next((l for l in model.layers if isinstance(l, tf.keras.layers.GlobalAveragePooling2D)), None)
     head = [l for l in model.layers if isinstance(l, tf.keras.layers.Dense)][-1]
     return model, class_names, threshold, base, gap, head
@@ -106,7 +108,10 @@ if file is not None:
         st.image(image, use_container_width=True)
     with c2:
         st.subheader("Grad-CAM")
-        cam = gradcam_overlay(arr, idx)
+        try:
+            cam = gradcam_overlay(arr, idx)
+        except Exception:
+            cam = None
         if cam is not None:
             st.image(cam, caption="Area yang menjadi dasar prediksi", use_container_width=True)
         else:
