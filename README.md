@@ -7,7 +7,7 @@ Proyek UTS Pembelajaran Mendalam (Kelompok 3). Membandingkan tiga model untuk me
 | Item | Link |
 |---|---|
 | Aplikasi yang sudah di-deploy (Streamlit) | https://kelompok3garbage-classification-mlp-vs-cnn-7kr4y4gklgqfzvbyhxw.streamlit.app/ |
-| Video demo dan tahapan deployment | ISI_LINK_VIDEO |
+| Video demo dan tahapan deployment | https://mikroskilacid-my.sharepoint.com/:v:/g/personal/steven_raffael_students_mikroskil_ac_id/IQC_9JRxrOfIQ4qfkK_NmlryAfRzgHVAWeZDK1gjG3QJVdk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QPgsyI |
 
 ## Dataset
 
